@@ -1,0 +1,48 @@
+<!-- Describe task in general -->
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}knapsack.png" alt="example" style="max-height: 200px"/>
+</p>
+<p>
+    This is the third mission in a series about famous and classical <a target="_blank" href="https://en.wikipedia.org/wiki/Knapsack_problem">Knapsack Problem</a>. 
+</p>
+<p>
+    You are given a{% if is_js %}n array{% else %} list{% endif %} of kinds of items <b>items</b>, that you want to put into knapsack. Item of each kind is a tuple of its value, weight and maximum amount. You need to find a subset of items, such that:
+    <ul>
+        <li>the total value of the items in subset is as large as possible;</li>
+        <li>the total weight of items in subset is at most <b>weight</b>, that is capacity of the knapsack;</li>
+        <li>for each kind of items you can select at most amount items.</li>
+    </ul>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input:</strong> Two arguments. Maximum weight as {% if is_js %}number{% else %}integer{% endif %}, items as {% if is_js %}array{% else %}list{% endif %} of tuples of three {% if is_js %}numbers{% else %}integers{% endif %}.
+</p>
+
+<p>
+    <strong>Output:</strong> Maximum value as {% if is_js %}number{% else %}integer{% endif %}. 
+</p>
+
+
+<p>
+    <strong>Examples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->

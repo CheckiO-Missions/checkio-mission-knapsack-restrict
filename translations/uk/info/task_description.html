@@ -1,0 +1,48 @@
+<!-- Describe task in general -->
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}knapsack.png" alt="example" style="max-height: 200px"/>
+</p>
+<p>
+    Це третя місія у серії про знамениту та класичну задачу про <a target="_blank" href="https://uk.wikipedia.org/wiki/Задача_пакування_рюкзака">Пакування Рюкзака</a>. 
+</p>
+<p>
+    Тобі дано {% if is_js %}масив{% else %}список{% endif %} видів речей <b>items</b>, які хотілося б помістити в рюкзак. Предмет кожного виду - це кортеж з його цінності, ваги та максимальної кількості. Тобі потрібно знайти такий набір предметів, щоб:
+    <ul>
+        <li>загальна цінність предметів у наборі була якомога більша;</li>
+        <li>загальна вага предметів не перевищувала максимальну - <b>weight</b>, яка є ємністю рюкзака;</li>
+        <li>кожного предмету можна взяти щонайбільше дану кількість одиниць.</li>
+    </ul>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Вхідні дані:</strong> Два аргументи. Максимальна вага як ціле число, предмети як {% if is_js %}масив{% else %}список{% endif %} кортежів із трьох цілих чисел.
+</p>
+
+<p>
+    <strong>Вихідні дані:</strong> Максимальна цінність як ціле число. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
